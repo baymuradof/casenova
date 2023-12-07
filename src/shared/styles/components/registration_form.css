@@ -1,0 +1,211 @@
+.question {
+    margin-bottom: 100px;
+  }
+  .question__blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+  .question__blocks .title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 50px;
+    color: #222222;
+    margin-bottom: 62px;
+  }
+  .question__blocks p {
+    font-weight: 300;
+    font-size: clamp(11px, 3vw, 16px);
+    line-height: clamp(20px, 3vw, 28px);
+    text-align: center;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    margin-bottom: clamp(20px, 3vw, 36px);
+    max-width: 636px;
+  }
+  .question__blocks .form__input-group {
+    width: 413px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .question__blocks .required {
+    color: red;
+  }
+  .question__blocks .form__input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #000;
+    transition: border 0.25s ease-in-out;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222;
+    outline: none;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+  }
+  .question__blocks .form__input-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 22px;
+    color: #636363;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    z-index: 1;
+  }
+  .question__blocks .form__input:focus ~ .form__input-label,
+  .question__blocks .form__input:not([value=""]) ~ .form__input-label {
+    top: 0;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .question__blocks button {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    background: #222222;
+    color: #fff;
+    padding: 20px 115px;
+    margin-top: 40px;
+    outline: none;
+    width: 100%;
+    border: none;
+  }
+  .question__blocks .label {
+    color: var(--medium-grey, #636363);
+    text-align: center;
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  @media screen and (max-width: 768px) {
+    .question__blocks .title {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+    .question__blocks p {
+      letter-spacing: 3.5px;
+    }
+    .question__blocks .form__input-group {
+      width: 100%;
+    }
+    .question__blocks .form__input-label {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .question__blocks button {
+      width: 100%;
+      padding: 12px 0;
+      font-size: 13px;
+      line-height: 16px;
+      margin-top: 16px;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    .question__blocks {
+      background-position: bottom 190px right 250px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .question__blocks {
+      background-position: bottom 190px right 150px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .question__blocks {
+      background-size: 159px 293px;
+      background-position: bottom 150px right 10px;
+      padding: 80px 0;
+      padding-bottom: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .question {
+      margin-bottom: 48px;
+    }
+    form {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .question {
+      margin-bottom: 100px;
+    }
+    .question button {
+      width: 100%;
+      height: 40px;
+    }
+    .question p {
+      max-width: 328px;
+    }
+  }
+  .form__resume {
+    border: 1px dashed var(--main-dark-grey, #222);
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+  }
+  
+  .form__input-labels {
+    border: 1px dashed var(--main-dark-grey, #222);
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .form_resume {
+    display: inline-block;
+    border: 1px dashed var(--main-dark-grey, #222);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    width: 100%;
+    height: 64px;
+  }
+  .form_resume .img_text {
+    color: #636363;
+    text-align: center;
+    font-family: Commissioner;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    width: 100%;
+  }
+  
+  .deleted_input {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .input {
+    display: none;
+  }
+  
+  .label {
+    cursor: pointer;
+  }
+  
+  .delete_btn {
+    cursor: pointer;
+  }/*# sourceMappingURL=registration_form.css.map */
