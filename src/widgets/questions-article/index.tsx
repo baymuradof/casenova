@@ -3,7 +3,7 @@ import React from "react"
 
 import nextImg from "@/shared/assets/img/equipment/next.png"
 
-const QuestionsArticlePage = () => {
+export const QuestionsArticle = () => {
 	return (
 		<div className="questions__article">
 			<h2
@@ -18,4 +18,3 @@ const QuestionsArticlePage = () => {
 		</div>
 	)
 }
-export default QuestionsArticlePage

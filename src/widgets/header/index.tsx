@@ -1,10 +1,12 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import navImg from "@/shared/assets/img/nav-img.png"
 import navLogoImg from "@/shared/assets/img/new-nav-logo.svg"
 
-const HeaderPage = () => {
+export const Header = () => {
+	const { t } = useTranslation("")
 	return (
 		<header className="header">
 			<div className="container_lg header__container">
@@ -17,32 +19,24 @@ const HeaderPage = () => {
 				<div id="headerMenu" className="header__menu">
 					<ul className="list-reset header__menu-nav">
 						<li className="header__menu-nav-list">
-							<a
-								className="header__menu-nav-list-link"
-								href="services.html"
-								data-i18n="services"
-							></a>
+							<a className="header__menu-nav-list-link" href="services.html">
+								{t("services")}
+							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a
-								className="header__menu-nav-list-link"
-								href="about.html"
-								data-i18n="aboutClinic"
-							></a>
+							<a className="header__menu-nav-list-link" href="about.html">
+								{t("aboutClinic")}
+							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a
-								className="header__menu-nav-list-link"
-								href="gallery.html"
-								data-i18n="gallery"
-							></a>
+							<a className="header__menu-nav-list-link" href="gallery.html">
+								{t("gallery")}
+							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a
-								className="header__menu-nav-list-link"
-								href="blog.html"
-								data-i18n="blog"
-							></a>
+							<a className="header__menu-nav-list-link" href="blog.html">
+								{t("blog")}
+							</a>
 						</li>
 						<li className="header__menu-nav-list">
 							<a
@@ -97,4 +91,3 @@ const HeaderPage = () => {
 		</header>
 	)
 }
-export default HeaderPage

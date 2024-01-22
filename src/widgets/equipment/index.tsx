@@ -7,7 +7,7 @@ import equipment3Img from "@/shared/assets/img/equipment/3.png"
 import descImg from "@/shared/assets/img/equipment/desc-img.png"
 import nextImg from "@/shared/assets/img/equipment/next.png"
 
-const EquipmentPage = () => {
+export const Equipments = () => {
 	return (
 		<div className="equipment">
 			<div className="container equipment__container">
@@ -86,4 +86,3 @@ const EquipmentPage = () => {
 		</div>
 	)
 }
-export default EquipmentPage

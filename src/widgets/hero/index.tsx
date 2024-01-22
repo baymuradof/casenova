@@ -5,7 +5,7 @@ import arrowDownImg from "@/shared/assets/img/arrow-down.svg"
 import heroCircleImg from "@/shared/assets/img/hero-circle-img.png"
 import heroImg from "@/shared/assets/img/new-hero-img.svg"
 
-const HeroPage = () => {
+export const Hero = () => {
 	return (
 		<div className="hero">
 			<div className="container-lg hero__container">
@@ -32,4 +32,3 @@ const HeroPage = () => {
 		</div>
 	)
 }
-export default HeroPage

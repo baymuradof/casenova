@@ -9,7 +9,7 @@ import services5Img from "@/shared/assets/img/services/5.png"
 import services6Img from "@/shared/assets/img/services/6.png"
 import services7Img from "@/shared/assets/img/services/7.png"
 
-const ServicePage = () => {
+export const Services = () => {
 	return (
 		<div id="services" className="services">
 			<div className="container-lg services__container">
@@ -73,6 +73,8 @@ const ServicePage = () => {
 							<Image
 								className="services__box-item-more-icon"
 								src="img/arrow-down.svg"
+								width={50}
+								height={50}
 								alt=""
 							/>
 						</a>
@@ -82,4 +84,3 @@ const ServicePage = () => {
 		</div>
 	)
 }
-export default ServicePage

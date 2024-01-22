@@ -1,14 +1,15 @@
-import { Inter } from "next/font/google"
 import Head from "next/head"
 
-import { FilledButton } from "@/shared/ui/buttons"
+import { Articles } from "@/widgets/articles"
+import { Equipments } from "@/widgets/equipment"
+import { Footer } from "@/widgets/footer"
+import { Header } from "@/widgets/header"
+import { Hero } from "@/widgets/hero"
+import { Questions } from "@/widgets/questions"
+import { QuestionsArticle } from "@/widgets/questions-article"
+import { Services } from "@/widgets/services"
 
-import s from "./styles.module.scss"
-import { PagePart } from "./ui"
-
-const inter = Inter({ subsets: ["latin"] })
-
-const HomePage = ({ stars }: { stars: number }) => {
+const HomePage = () => {
 	return (
 		<>
 			<Head>
@@ -17,12 +18,24 @@ const HomePage = ({ stars }: { stars: number }) => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={inter.className}>
-				<h1 className={s.wrapper}>HomePage</h1>
-				<FilledButton>test</FilledButton>
-				<PagePart />
-				{stars}
-			</main>
+			<div className="site-container">
+				<div className="header_wrapper">
+					<Header />
+					<Hero />
+				</div>
+				<div className="services-wrapper">
+					<Services />
+				</div>
+				<div className="equipment_wrapper">
+					<Equipments />
+					<Articles />
+					<div className="ellipse_wrapper">
+						<Questions />
+						<QuestionsArticle />
+					</div>
+				</div>
+				<Footer />
+			</div>
 		</>
 	)
 }

@@ -6,7 +6,7 @@ import instagramImg from "@/shared/assets/img/instagram.png"
 import footerLogoImg from "@/shared/assets/img/new-footer-logo.svg"
 import telegramImg from "@/shared/assets/img/telegram.png"
 
-const FooterPage = () => {
+export const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="container">
@@ -74,4 +74,3 @@ const FooterPage = () => {
 		</footer>
 	)
 }
-export default FooterPage

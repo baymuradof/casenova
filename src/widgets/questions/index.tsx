@@ -1,6 +1,6 @@
 import React from "react"
 
-const QuestionsPage = () => {
+export const Questions = () => {
 	return (
 		<div className="questions">
 			<div className="container">
@@ -47,4 +47,3 @@ const QuestionsPage = () => {
 		</div>
 	)
 }
-export default QuestionsPage

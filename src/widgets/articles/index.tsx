@@ -4,7 +4,7 @@ import React from "react"
 import leftImg from "@/shared/assets/img/left.png"
 import rightImg from "@/shared/assets/img/right.png"
 
-const ArticlesPage = () => {
+export const Articles = () => {
 	return (
 		<div className="article">
 			<div className="article__container">
@@ -29,4 +29,3 @@ const ArticlesPage = () => {
 		</div>
 	)
 }
-export default ArticlesPage

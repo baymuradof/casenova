@@ -1,8 +1,8 @@
 import React from "react"
 
-const HeadPage = () => {
+export const HeadComponent = () => {
 	return (
-		<head>
+		<>
 			<meta charSet="UTF-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -27,7 +27,6 @@ const HeadPage = () => {
 				src="https://api-maps.yandex.ru/2.1/?61aaeb3a-a6d8-4c95-bc56-89bd0b4f3709&lang=en_US"
 				type="text/javascript"
 			></script> */}
-		</head>
+		</>
 	)
 }
-export default HeadPage
