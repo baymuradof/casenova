@@ -3,7 +3,7 @@ const path = require("path")
 const { i18n } = require("./next-i18next.config")
 
 const nextConfig = {
-	i18n,
+	// i18n,
 	reactStrictMode: true,
 	sassOptions: {
 		includePaths: [path.join(__dirname, "src")],

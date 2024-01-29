@@ -6,5 +6,5 @@ module.exports = {
 		locales: ["ru", "en", "uz"],
 		defaultLocale: "ru",
 	},
-	// localePath: path.resolve("./src/shared/locales"),
+	localePath: path.resolve("./src/shared/locales"),
 }

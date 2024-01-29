@@ -5,8 +5,14 @@ import { useTranslation } from "react-i18next"
 import navImg from "@/shared/assets/img/nav-img.png"
 import navLogoImg from "@/shared/assets/img/new-nav-logo.svg"
 
+// @ts-ignore
+import i18n from "../../../i18n"
+
 export const Header = () => {
-	const { t } = useTranslation("")
+	const { t } = useTranslation()
+	function handleChange(lang: string) {
+		i18n.changeLanguage(lang)
+	}
 	return (
 		<header className="header">
 			<div className="container_lg header__container">
@@ -42,15 +48,14 @@ export const Header = () => {
 							<a
 								className="header__menu-nav-list-link"
 								href="equipm.html"
-								data-i18n="equipment"
-							></a>
+								
+							>{t("equipment")}</a>
 						</li>
 						<li className="header__menu-nav-list">
 							<a
 								className="header__menu-nav-list-link"
 								href="contacts.html"
-								data-i18n="contacts"
-							></a>
+							>{t("contacts")}</a>
 						</li>
 					</ul>
 					<ul className="header-dropdown-mobile" id="lang-dropdown-mobile">
@@ -60,7 +65,11 @@ export const Header = () => {
 					</ul>
 				</div>
 				<div className="header__info">
-					<select className="header-dropdown" id="lang-dropdown">
+					<select
+						className="header-dropdown"
+						id="lang-dropdown"
+						onChange={(e) => handleChange(e.target.value)}
+					>
 						<option value="ru" className="header-dropdown-option">
 							РУС
 						</option>

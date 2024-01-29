@@ -23,6 +23,7 @@
     "clsx": "2.0.0",
     "dayjs": "1.11.10",
     "i18next": "^23.7.18",
+    "i18next-browser-languagedetector": "^7.2.0",
     "next": "14.0.1",
     "next-i18next": "^15.2.0",
     "react": "18",
@@ -62,4 +63,3 @@
     "typescript": "5"
   }
 }
-

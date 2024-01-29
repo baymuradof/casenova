@@ -1,11 +1,13 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import arrowDownImg from "@/shared/assets/img/arrow-down.svg"
 import heroCircleImg from "@/shared/assets/img/hero-circle-img.png"
 import heroImg from "@/shared/assets/img/new-hero-img.svg"
 
 export const Hero = () => {
+	const { t } = useTranslation()
 	return (
 		<div className="hero">
 			<div className="container-lg hero__container">
@@ -15,10 +17,7 @@ export const Hero = () => {
 							<Image src={heroImg} alt="heroimg" />
 						</div>
 						<a href="#services" className="hero__content-info-text">
-							<p
-								className="hero__content-info-text-title"
-								data-i18n="openWorld"
-							></p>
+							<p className="hero__content-info-text-title"> {t("openWorld")}</p>
 							<Image src={arrowDownImg} alt="arrowdown" />
 						</a>
 					</div>
