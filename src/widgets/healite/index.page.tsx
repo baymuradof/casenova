@@ -1,5 +1,6 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import modalImg2 from "@/shared/assets/img/equipment/modal-img-OLAT.png"
 import modalImg from "@/shared/assets/img/equipment/modal-img.png"
@@ -7,97 +8,85 @@ import squareImg from "@/shared/assets/img/equipment/square.png"
 import dermotologyImg from "@/shared/assets/img/services/dermotology.png"
 
 export const HealiteComponent = () => {
+	const { t } = useTranslation()
 	return (
 		<div className="machinery healite-2">
 			<div className="machinery__middle_body">
-				<h3
-					className="machinery__body--title"
-					data-i18n="LEDSystemForLowIntensity"
-				></h3>
-				<p
-					className="machinery__body--text"
-					data-i18n="HEALITELowIntensity"
-				></p>
-				<h3
-					className="machinery__body--title"
-					data-i18n="ThreeWavelengths"
-				></h3>
+				<h3 className="machinery__body--title">
+					{t("LEDSystemForLowIntensity")}
+				</h3>
+				<p className="machinery__body--text">{t("HEALITELowIntensity")}</p>
+				<h3 className="machinery__body--title">{t("ThreeWavelengths")}</h3>
 				<div className="machinery__body--block">
 					<div className="machinery__body--block--item">
 						<Image src={squareImg} alt="square" />
-						<p data-i18n="830(+590)нм"></p>
+						<p>{t("830(+590)нм")}</p>
 					</div>
 					<div className="machinery__body--block--item">
 						<Image src={squareImg} alt="square" />
-						<p data-i18n="633нм"></p>
+						<p>{t("633нм")}</p>
 					</div>
 					<div className="machinery__body--block--item">
 						<Image src={squareImg} alt="square" />
-						<p data-i18n="415нм"></p>
+						<p>{t("415нм")}</p>
 					</div>
 				</div>
 				<div className="machinery__body--listscover">
-					<h4
-						className="machinery__body--subtitle"
-						data-i18n="830(+590)нм"
-					></h4>
+					<h4 className="machinery__body--subtitle">{t("830(+590)нм")}</h4>
 					<ul className="machinery__body--list">
 						<li className="machinery__body--list_text">
-							<p data-i18n="woundHealing"></p>
+							<p>{t("woundHealing")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="painRelief"></p>
+							<p>{t("painRelief")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="painInMuscules"></p>
+							<p>{t("painInMuscules")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="artritis"></p>
+							<p>{t("artritis")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="musculeSpasm"></p>
+							<p>{t("musculeSpasm")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="bloodCirculation"></p>
+							<p>{t("bloodCirculation")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="hairLoss"></p>
+							<p>{t("hairLoss")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="acne"></p>
+							<p>{t("acne")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="scinRejuvenation"></p>
+							<p>{t("scinRejuvenation")}</p>
 						</li>
 					</ul>
-					<h4 className="machinery__body--subtitle" data-i18n="633нм"></h4>
+					<h4 className="machinery__body--subtitle">{t("633нм")}</h4>
 					<ul className="machinery__body--list">
 						<li className="machinery__body--list_text">
-							<p data-i18n="scinRejuvenation"></p>
+							<p>{t("scinRejuvenation")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="hairLoss"></p>
+							<p>{t("hairLoss")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="scinRejuvenation2"></p>
+							<p>{t("scinRejuvenation2")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="acneHealing"></p>
+							<p>{t("acneHealing")}</p>
 						</li>
 					</ul>
 
-					<h4 className="machinery__body--subtitle" data-i18n="415нм"></h4>
+					<h4 className="machinery__body--subtitle">{t("415нм")}</h4>
 					<ul className="machinery__body--list">
 						<li className="machinery__body--list_text">
-							<p data-i18n="activeAcne"></p>
+							<p>{t("activeAcne")}</p>
 						</li>
 					</ul>
 				</div>
 
-				<h3
-					className="machinery__body--title"
-					data-i18n="LookOnWorkHealite"
-				></h3>
+				<h3 className="machinery__body--title">{t("LookOnWorkHealite")}</h3>
 				<div className="machinery__body--video">
 					<iframe
 						width="100%"
@@ -110,90 +99,79 @@ export const HealiteComponent = () => {
 						allowFullScreen
 					></iframe>
 				</div>
-				<h3 className="machinery__body--title" data-i18n="mainAdvantages"></h3>
+				<h3 className="machinery__body--title">{t("mainAdvantages")}</h3>
 				<div className="machinery__body--listscover">
 					<ul className="machinery__body--list">
 						<li className="machinery__body--list_text">
-							<p data-i18n="technologyOfConcentrated"></p>
+							<p>{t("technologyOfConcentrated")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="technologyOfPhoto"></p>
+							<p>{t("technologyOfPhoto")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="comfortableScreen"></p>
+							<p>{t("comfortableScreen")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="fullControl"></p>
+							<p>{t("fullControl")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="accessToUseLampBlock"></p>
+							<p>{t("accessToUseLampBlock")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="deepInfluence"></p>
+							<p>{t("deepInfluence")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="subcellularLevel"></p>
+							<p>{t("subcellularLevel")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="easyToUseWithOther"></p>
+							<p>{t("easyToUseWithOther")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="painless"></p>
+							<p>{t("painless")}</p>
 						</li>
 					</ul>
 				</div>
 				<div className="machinery__body--box">
 					<Image src={dermotologyImg} alt="dermotology" />
 					<div className="machinery__body--box--desc">
-						<p data-i18n="beforeCure"></p>
-						<p data-i18n="afterCure"></p>
+						<p>{t("beforeCure")}</p>
+						<p>{t("afterCure")}</p>
 					</div>
 				</div>
-				<h4
-					className="machinery__body--subtitle"
-					data-i18n="MatrixTechnology"
-				></h4>
+				<h4 className="machinery__body--subtitle">{t("MatrixTechnology")}</h4>
 				<div>
-					<p
-						className="machinery__body--text"
-						data-i18n="MatrixTechnologyDesc"
-					></p>
+					<p className="machinery__body--text">{t("MatrixTechnologyDesc")}</p>
 					<div className="machinery__body--image">
 						<Image src={modalImg} alt="OLAT image" />
 					</div>
 				</div>
-				<h4
-					className="machinery__body--subtitle"
-					data-i18n="fullyRegulated"
-				></h4>
-				<p className="machinery__body--text" data-i18n="fullyRegulatedDesk"></p>
-				<h4
-					className="machinery__body--subtitle"
-					data-i18n="fullyRefulatedWithFocus"
-				></h4>
+				<h4 className="machinery__body--subtitle">{t("fullyRegulated")}</h4>
+				<p className="machinery__body--text">{t("fullyRegulatedDesk")}</p>
+				<h4 className="machinery__body--subtitle">
+					{t("fullyRefulatedWithFocus")}
+				</h4>
 				<div>
 					<Image src={modalImg2} alt="OLAT image" />
 				</div>
-				<h3
-					className="machinery__body--title"
-					data-i18n="overallInfoForUsability"
-				></h3>
+				<h3 className="machinery__body--title">
+					{t("overallInfoForUsability")}
+				</h3>
 				<div className="machinery__body--listscover">
 					<ul className="machinery__body--list">
 						<li className="machinery__body--list_text">
-							<p data-i18n="acelerationOfWound"></p>
+							<p>{t("acelerationOfWound")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="lessPain"></p>
+							<p>{t("lessPain")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="ProfilacticsOfForming"></p>
+							<p>{t("ProfilacticsOfForming")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="LessHyperpigmentation"></p>
+							<p>{t("LessHyperpigmentation")}</p>
 						</li>
 						<li className="machinery__body--list_text">
-							<p data-i18n="BetterOverAllStats"></p>
+							<p>{t("BetterOverAllStats")}</p>
 						</li>
 					</ul>
 				</div>

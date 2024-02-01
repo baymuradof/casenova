@@ -1,15 +1,17 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import deleteIconImg from "@/shared/assets/img/delete icon resume.svg"
 
 export const RegistrationForm = () => {
+	const { t } = useTranslation()
 	return (
 		<div className="question">
 			<div className="container">
 				<div className="question__blocks">
-					<h2 className="title" data-i18n="workWithUs"></h2>
-					<p data-i18n="leaveUrResume"></p>
+					<h2 className="title">{t("workWithUs")}</h2>
+					<p>{t("leaveUrResume")}</p>
 					<form className="form">
 						<div className="form__input-group">
 							<input
@@ -20,7 +22,7 @@ export const RegistrationForm = () => {
 								value=""
 								/* onkeyup="this.setAttribute('value', this.value);" */ autoComplete="off"
 							/>
-							<label className="form__input-label" data-i18n="yourName"></label>
+							<label className="form__input-label">{t("yourName")}</label>
 						</div>
 
 						<div className="form__input-group">
@@ -34,10 +36,7 @@ export const RegistrationForm = () => {
 								value=""
 								/* onkeyup="this.setAttribute('value', this.value);" */ autoComplete="off"
 							/>
-							<label
-								className="form__input-label"
-								data-i18n="yourPhone"
-							></label>
+							<label className="form__input-label">{t("yourPhone")}</label>
 						</div>
 						<div className="form__input-group dnone">
 							<div className="form_resume">
@@ -47,11 +46,9 @@ export const RegistrationForm = () => {
 									id="uploadBtn"
 									name="resume"
 								/>
-								<label
-									className="label"
-									htmlFor="uploadBtn"
-									data-i18n="attachFile"
-								></label>
+								<label className="label" htmlFor="uploadBtn">
+									{t("attachFile")}
+								</label>
 							</div>
 							<div className="required"></div>
 						</div>
@@ -62,7 +59,7 @@ export const RegistrationForm = () => {
 							</div>
 							<div className="required"></div>
 						</div>
-						<button type="submit" data-i18n="sendResume"></button>
+						<button type="submit">{t("sendResume")}</button>
 					</form>
 				</div>
 			</div>

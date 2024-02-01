@@ -1,5 +1,6 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import services1Img from "@/shared/assets/img/services/1.png"
 import services2Img from "@/shared/assets/img/services/2.png"
@@ -10,66 +11,59 @@ import services6Img from "@/shared/assets/img/services/6.png"
 import services7Img from "@/shared/assets/img/services/7.png"
 
 export const Services = () => {
+	const { t } = useTranslation()
 	return (
 		<div id="services" className="services">
 			<div className="container-lg services__container">
 				<div className="services__box">
 					<div className="services__box-item border-radius-top-left">
 						<Image src={services1Img} alt="servicesImg" />
-						<p className="services__box-item-desc" data-i18n="cosmetology"></p>
+						<p className="services__box-item-desc">{t("cosmetology")}</p>
 					</div>
 
 					<div className="services__box-item">
-						<h3
-							className="services__box-item-title"
-							data-i18n="yourBeauty"
-						></h3>
-						<p
-							className="services__box-item-subtitle"
-							data-i18n="scienceBase"
-						></p>
+						<h3 className="services__box-item-title">{t("yourBeauty")}</h3>
+						<p className="services__box-item-subtitle">{t("scienceBase")}</p>
 					</div>
 
 					<div className="services__box-item">
 						<Image src={services2Img} alt="servicesImg" />
-						<p className="services__box-item-desc" data-i18n="laserDermo"></p>
+						<p className="services__box-item-desc">{t("laserDermo")}</p>
 					</div>
 
 					<div className="services__box-item">
 						<Image src={services3Img} alt="servicesImg" />
-						<p className="services__box-item-desc" data-i18n="dermotology"></p>
+						<p className="services__box-item-desc">{t("dermotology")}</p>
 					</div>
 
 					<div className="services__box-item">
 						<Image src={services4Img} alt="servicesImg" />
-						<p className="services__box-item-desc" data-i18n="trixology"></p>
+						<p className="services__box-item-desc">{t("trixology")}</p>
 					</div>
 
 					<div className="services__box-item border-radius-top-right">
 						<Image src={services5Img} alt="servicesImg" />
-						<p className="services__box-item-desc" data-i18n="apparatKos"></p>
+						<p className="services__box-item-desc">{t("apparatKos")}</p>
 					</div>
 
 					<div className="services__box-item border-radius-bottom-left">
 						<Image src={services6Img} alt="servicesImg" />
-						<p
-							className="services__box-item-desc"
-							data-i18n="bodyCorrection"
-						></p>
+						<p className="services__box-item-desc">{t("bodyCorrection")}</p>
 					</div>
 
 					<div className="services__box-item border-radius-top-right">
 						<Image src={services7Img} alt="servicesImg" />
-						<p className="services__box-item-desc" data-i18n="esteticGin"></p>
+						<p className="services__box-item-desc">{t("esteticGin")}</p>
 					</div>
 
 					<div className="services__box-item">
-						<a href="services.html" className="services__box-item-more">
+						<a href="services" className="services__box-item-more">
 							<p
 								style={{ textAlign: "start" }}
 								className="services__box-item-more-title"
-								data-i18n="lookServices"
-							></p>
+							>
+								{t("lookServices")}
+							</p>
 							<Image
 								className="services__box-item-more-icon"
 								src="img/arrow-down.svg"

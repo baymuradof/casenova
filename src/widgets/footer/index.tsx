@@ -1,5 +1,6 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import facebookImg from "@/shared/assets/img/facebook.png"
 import instagramImg from "@/shared/assets/img/instagram.png"
@@ -7,6 +8,7 @@ import footerLogoImg from "@/shared/assets/img/new-footer-logo.svg"
 import telegramImg from "@/shared/assets/img/telegram.png"
 
 export const Footer = () => {
+	const { t } = useTranslation()
 	return (
 		<footer className="footer">
 			<div className="container">
@@ -20,7 +22,7 @@ export const Footer = () => {
 							<Image src={footerLogoImg} alt="logo" />
 						</a>
 						<div className="footer__block--socials">
-							<h4 data-i18n="tashkent124B"></h4>
+							<h4>{t("tashkent124B")}</h4>
 							<div className="footer__block--socials--list">
 								{/* <a
 									href="https://www.facebook.com/people/Case-Nova/100095283470258/?mibextid=LQQJ4d"
@@ -63,11 +65,11 @@ export const Footer = () => {
 								<Image className="footer-logo" src={footerLogoImg} alt="logo" />
 							</a>
 						</div>
-						<a href="services.html" data-i18n="services"></a>
-						<a href="about.html" data-i18n="aboutClinic"></a>
-						<a href="gallery.html" data-i18n="gallery"></a>
-						<a href="blog.html" data-i18n="blog"></a>
-						<a href="contacts.html" data-i18n="contacts"></a>
+						<a href="services">{t("services")}</a>
+						<a href="about">{t("aboutClinic")}</a>
+						<a href="gallery">{t("gallery")}</a>
+						<a href="blog">{t("blog")}</a>
+						<a href="contacts">{t("contacts")}</a>
 					</div>
 				</div>
 			</div>

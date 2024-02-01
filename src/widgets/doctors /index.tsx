@@ -1,5 +1,6 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import s1Img from "@/shared/assets/img/about/s-1.png"
 import s2Img from "@/shared/assets/img/about/s-2.png"
@@ -8,13 +9,14 @@ import leftpng from "@/shared/assets/img/left.png"
 import rightpng from "@/shared/assets/img/right.png"
 
 export const Doctors = () => {
+	const { t } = useTranslation()
 	return (
 		<div className="doctors">
 			<div className="container">
 				<div className="doctors__box">
 					<div className="doctors__box--head">
-						<h3 data-i18n="ourDoctors"></h3>
-						<p data-i18n="profesionals"></p>
+						<h3>{t("ourDoctors")}</h3>
+						<p>{t("profesionals")}</p>
 						<div className="doctors__box--head--btns">
 							<button className="prev-btn">
 								<Image src={leftpng} alt="left" />
@@ -30,21 +32,21 @@ export const Doctors = () => {
 								<div className="doctors__box--desc">
 									<Image src={s1Img} alt="about" />
 									<h3>Виктория Новостройкина</h3>
-									<p data-i18n="dermDoctor"></p>
+									<p>{t("dermDoctor")}</p>
 								</div>
 							</div>
 							<div className="swiper-slide">
 								<div className="doctors__box--desc">
 									<Image src={s2Img} alt="about" />
 									<h3>Маргарита Трихополова</h3>
-									<p data-i18n="dermDoctor"></p>
+									<p>{t("dermDoctor")}</p>
 								</div>
 							</div>
 							<div className="swiper-slide">
 								<div className="doctors__box--desc">
 									<Image src={s3Img} alt="about" />
 									<h3>Екатерина Невашенко</h3>
-									<p data-i18n="dermDoctor"></p>
+									<p>{t("dermDoctor")}</p>
 								</div>
 							</div>
 						</div>

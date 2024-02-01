@@ -25,37 +25,34 @@ export const Header = () => {
 				<div id="headerMenu" className="header__menu">
 					<ul className="list-reset header__menu-nav">
 						<li className="header__menu-nav-list">
-							<a className="header__menu-nav-list-link" href="services.html">
+							<a className="header__menu-nav-list-link" href="servicess">
 								{t("services")}
 							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a className="header__menu-nav-list-link" href="about.html">
+							<a className="header__menu-nav-list-link" href="about">
 								{t("aboutClinic")}
 							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a className="header__menu-nav-list-link" href="gallery.html">
+							<a className="header__menu-nav-list-link" href="gallery">
 								{t("gallery")}
 							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a className="header__menu-nav-list-link" href="blog.html">
+							<a className="header__menu-nav-list-link" href="blog">
 								{t("blog")}
 							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a
-								className="header__menu-nav-list-link"
-								href="equipm.html"
-								
-							>{t("equipment")}</a>
+							<a className="header__menu-nav-list-link" href="equipment">
+								{t("equipment")}
+							</a>
 						</li>
 						<li className="header__menu-nav-list">
-							<a
-								className="header__menu-nav-list-link"
-								href="contacts.html"
-							>{t("contacts")}</a>
+							<a className="header__menu-nav-list-link" href="contacts">
+								{t("contacts")}
+							</a>
 						</li>
 					</ul>
 					<ul className="header-dropdown-mobile" id="lang-dropdown-mobile">
@@ -88,7 +85,7 @@ export const Header = () => {
 								href="tel:998903908080"
 							>
 								+998 77-271-88-77
-								{/* <!-- <span className="header__info-nav-phone-link-text" data-i18n="orderCall"></span> --> */}
+								{/* <!-- <span className="header__info-nav-phone-link-text" dat-i18n="orderCall"></span> --> */}
 							</a>
 						</li>
 					</ul>

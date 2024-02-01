@@ -1,12 +1,15 @@
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 export const Questions = () => {
+	const { t } = useTranslation()
+
 	return (
 		<div className="questions">
 			<div className="container">
 				<div className="questions__block">
-					<h2 data-i18n="ifQuestionsArise"></h2>
-					<p data-i18n="interestIsNormal"></p>
+					<h2>{t("ifQuestionsArise")}</h2>
+					<p>{t("interestIsNormal")}</p>
 					<form>
 						<div className="form__input-group">
 							{/* TODO: fix onKeyup */}
@@ -18,7 +21,7 @@ export const Questions = () => {
 								value=""
 								/* onkeyup="this.setAttribute('value', this.value);"*/ autoComplete="off"
 							/>
-							<label className="form__input-label" data-i18n="yourName"></label>
+							<label className="form__input-label">{t("yourName")}</label>
 						</div>
 
 						<div className="form__input-group">
@@ -32,12 +35,9 @@ export const Questions = () => {
 								value=""
 								/* onkeyup="this.setAttribute('value', this.value);"*/ autoComplete="off"
 							/>
-							<label
-								className="form__input-label"
-								data-i18n="yourPhone"
-							></label>
+							<label className="form__input-label">{t("yourPhone")}</label>
 						</div>
-						<button type="submit" data-i18n="orderBackCall"></button>
+						<button type="submit">{t("orderBackCall")}</button>
 					</form>
 				</div>
 

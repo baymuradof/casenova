@@ -1,5 +1,6 @@
 import Image from "next/image"
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import equipment1Img from "@/shared/assets/img/equipment/1.png"
 import equipment2Img from "@/shared/assets/img/equipment/2.png"
@@ -8,6 +9,7 @@ import descImg from "@/shared/assets/img/equipment/desc-img.png"
 import nextImg from "@/shared/assets/img/equipment/next.png"
 
 export const Equipments = () => {
+	const { t } = useTranslation()
 	return (
 		<div className="equipment">
 			<div className="container equipment__container">
@@ -16,14 +18,12 @@ export const Equipments = () => {
 					<div className="equipment__card-item card_item1">
 						{/* <!--   title card   --> */}
 						<div className="equipment__card-item-info">
-							<h3
-								className="equipment__card-item-info-title"
-								data-i18n="idealEquipment"
-							></h3>
-							<p
-								className="equipment__card-item-info-subtitle"
-								data-i18n="fastAndSafe"
-							></p>
+							<h3 className="equipment__card-item-info-title">
+								{t("idealEquipment")}
+							</h3>
+							<p className="equipment__card-item-info-subtitle">
+								{t("fastAndSafe")}
+							</p>
 						</div>
 						<div className="equipment__card-item-box left border-radius-bottom-right">
 							<Image src={equipment1Img} alt="equipment" />
@@ -68,17 +68,14 @@ export const Equipments = () => {
 				<div className="equipment__desc">
 					<h2 className="equipment__desc--title">
 						Case Nova. <br />
-						<span data-i18n="recoverYoung"></span>
+						<span>{t("recoverYoung")}</span>
 					</h2>
-					<p
-						className="equipment__desc--text"
-						data-i18n="caseNovaBuiltIn2016"
-					></p>
+					<p className="equipment__desc--text">{t("caseNovaBuiltIn2016")}</p>
 					<div className="equipment__desc--img">
 						<Image src={descImg} alt="desc-img" />
 					</div>
-					<a href="about.html" className="equipment__desc--button">
-						<p data-i18n="moreAboutUs"></p>
+					<a href="about" className="equipment__desc--button">
+						<p>{t("moreAboutUs")}</p>
 						<Image src={nextImg} alt="next" />
 					</a>
 				</div>
