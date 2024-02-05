@@ -1,5 +1,8 @@
 import React from "react"
 
+import "@/shared/styles/main.css"
+import "@/shared/styles/vendor.css"
+
 export const HeadComponent = () => {
 	return (
 		<>

@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Commissioner&family=Grandiflora+One&family=Yeon+Sung&display=swap");
 
+
 :root {
   --font-family: "Commissioner", sans-serif !important;
   --content-width: 1308px;
@@ -87,7 +88,7 @@ img {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .site-container {
@@ -805,10 +806,11 @@ a {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url("../assets/img/arrow-down.svg");
+  background-image: url("../assets/img/arrow.svg");
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 20px;
+  text-decoration: none;
 }
 
 .header-dropdown-mobile {
@@ -6280,6 +6282,6 @@ a {
     font-size: 12px;
     max-width: 328px;
   }
-}
+} 
 
 /*# sourceMappingURL=main.css.map */

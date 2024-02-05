@@ -1,5 +1,5 @@
 import Image from "next/image"
-import React from "react"
+import React, { useState } from "react"
 import { useTranslation } from "react-i18next"
 
 import navImg from "@/shared/assets/img/nav-img.png"
@@ -10,19 +10,33 @@ import i18n from "../../../i18n"
 
 export const Header = () => {
 	const { t } = useTranslation()
-	function handleChange(lang: string) {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+	const handleChange = (lang: string) => {
 		i18n.changeLanguage(lang)
 	}
+
+	const handleMenuClick = () => {
+		setIsMenuOpen(!isMenuOpen)
+	}
+
 	return (
-		<header className="header">
+		<header className={`header ${isMenuOpen ? "headerCover" : ""}`}>
 			<div className="container_lg header__container">
-				<div id="menuBtn" className="menu__btn">
+				<div
+					id="menuBtn"
+					className={`menu__btn ${isMenuOpen ? "open" : ""}`}
+					onClick={handleMenuClick}
+				>
 					<div className="menu__btn--burger"></div>
 				</div>
 				<a href="/" className="header__logo">
 					<Image src={navLogoImg} alt="logo" />
 				</a>
-				<div id="headerMenu" className="header__menu">
+				<div
+					id="headerMenu"
+					className={`header__menu ${isMenuOpen ? "openNav" : ""}`}
+				>
 					<ul className="list-reset header__menu-nav">
 						<li className="header__menu-nav-list">
 							<a className="header__menu-nav-list-link" href="servicess">
@@ -56,9 +70,15 @@ export const Header = () => {
 						</li>
 					</ul>
 					<ul className="header-dropdown-mobile" id="lang-dropdown-mobile">
-						<li data-value="ru">РУС</li>
-						<li data-value="en">ENG</li>
-						<li data-value="uz">O&rsquo;ZB</li>
+						<li onClick={() => handleChange("ru")} data-value="ru">
+							РУС
+						</li>
+						<li onClick={() => handleChange("en")} data-value="en">
+							ENG
+						</li>
+						<li onClick={() => handleChange("uz")} data-value="uz">
+							O&rsquo;ZB
+						</li>
 					</ul>
 				</div>
 				<div className="header__info">
@@ -77,7 +97,6 @@ export const Header = () => {
 							O&rsquo;ZB
 						</option>
 					</select>
-
 					<ul className="list-reset header__info-nav">
 						<li className="header__info-nav-phone">
 							<a
@@ -85,7 +104,6 @@ export const Header = () => {
 								href="tel:998903908080"
 							>
 								+998 77-271-88-77
-								{/* <!-- <span className="header__info-nav-phone-link-text" dat-i18n="orderCall"></span> --> */}
 							</a>
 						</li>
 					</ul>
