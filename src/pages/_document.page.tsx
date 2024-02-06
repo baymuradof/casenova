@@ -1,4 +1,4 @@
-import { ColorSchemeScript } from "@mantine/core"
+// import { ColorSchemeScript } from "@mantine/core"
 import { Head, Html, Main, NextScript } from "next/document"
 
 import { HeadComponent } from "@/widgets/head"
@@ -8,7 +8,7 @@ export default function Document() {
 		<Html lang="ru">
 			<Head>
 				<HeadComponent />
-				<ColorSchemeScript />
+				{/* <ColorSchemeScript /> */}
 			</Head>
 			<body className="body page__body">
 				<Main />
