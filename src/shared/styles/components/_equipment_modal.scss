@@ -2,69 +2,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@800&display=swap");
 
 .modal_middle_body {
-  display: none;
+	display: none;
 }
 
 .equipments_modal_block_card {
-  display: flex;
-  flex-direction: column;
-  p {
-    font-size: 24px;
-    line-height: 30px;
-    color: #636363;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .wrap {
-    display: flex;
-  }
+	display: flex;
+	flex-direction: column;
+	p {
+		font-size: 24px;
+		line-height: 30px;
+		color: #636363;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	.wrap {
+		display: flex;
+	}
 }
 .equipments_modal_block_card_img {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 .machinery_text {
-  width: 100%;
-  p {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
-    color: #222222;
-    max-width: 100%;
-  }
+	width: 100%;
+	p {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 28px;
+		color: #222222;
+		max-width: 100%;
+	}
 }
 .servisex_modal_title {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 44px;
-  margin-bottom: 36px;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 44px;
+	margin-bottom: 36px;
 }
 @media (max-width: 475px) {
-  .equipments_modal_block_card {
-    p {
-      font-size: 14px;
-      line-height: 18px;
-      margin-bottom: 3px;
-    }
-    .wrap {
-      display: flex;
-    }
-  }
-  .equipments_modal_block_card_img {
-    height: 410px;
-  }
+	.equipments_modal_block_card {
+		p {
+			font-size: 14px;
+			line-height: 18px;
+			margin-bottom: 3px;
+		}
+		.wrap {
+			display: flex;
+		}
+	}
+	.equipments_modal_block_card_img {
+		height: 410px;
+	}
 
-  .servisex_modal_title {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 16px;
-  }
-  .machinery_text {
-    p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 22px;
-    }
-  }
+	.servisex_modal_title {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 16px;
+	}
+	.machinery_text {
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+		}
+	}
 }
