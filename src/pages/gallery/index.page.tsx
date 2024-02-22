@@ -2,9 +2,9 @@ import { Footer } from "@/widgets/footer"
 import { GalleryHero } from "@/widgets/gallery-hero/index.page"
 import { Header } from "@/widgets/header"
 
-const galleryPage = () => {
+const GalleryPage = () => {
 	return (
-		<body className="page__body">
+		<div className="page__body">
 			<div className="site-container">
 				<div className="gallery-wrap">
 					<div className="services-wrap">
@@ -14,7 +14,8 @@ const galleryPage = () => {
 					<Footer />
 				</div>
 			</div>
-		</body>
+		</div>
 	)
 }
-export default galleryPage
+
+export default GalleryPage

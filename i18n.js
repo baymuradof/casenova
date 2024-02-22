@@ -24,7 +24,7 @@ i18n
 		fallbackLng: "ru",
 		debug: process.env.NODE_ENV === "development",
 		interpolation: {
-			escapeValue: false, 
+			escapeValue: false,
 		},
 	})
 

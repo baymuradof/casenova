@@ -1,0 +1,13 @@
+.button {
+  color: #12b76a;
+  border-color: #12b76a;
+  font-weight: 500;
+}
+.button:hover {
+  background-color: #f6fef9;
+  color: #039855;
+}
+.button:disabled {
+  color: #d0d5dd;
+  border-color: #e4e7ec;
+}/*# sourceMappingURL=styles.module.css.map */

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next"
 
 import navImg from "@/shared/assets/img/nav-img.png"
 import navLogoImg from "@/shared/assets/img/new-nav-logo.svg"
+import "@/shared/styles/vendor.css"
 
 // @ts-ignore
 import i18n from "../../../i18n"

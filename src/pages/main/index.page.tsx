@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-import { Articles } from "@/widgets/articles"
+import ArticlesComponent from "@/widgets/articles"
 import { Equipments } from "@/widgets/equipment"
 import { Footer } from "@/widgets/footer"
 import { Header } from "@/widgets/header"
@@ -28,7 +28,7 @@ const HomePage = () => {
 				</div>
 				<div className="equipment_wrapper">
 					<Equipments />
-					<Articles />
+					<ArticlesComponent />
 					<div className="ellipse_wrapper">
 						<Questions />
 						<QuestionsArticle />

@@ -6,7 +6,17 @@ import { ModalComponent } from "@/widgets/modal"
 import { Questions } from "@/widgets/questions"
 import { Values } from "@/widgets/values/values.page"
 
-const AboutPage = () => {
+import "@/shared/styles/main.css"
+import "@/shared/styles/vendor.css"
+
+interface AboutPageProps {
+	someProperty: string
+	anotherProperty: number
+}
+
+const AboutPage = (data: AboutPageProps) => {
+	console.log("bekend data", data)
+
 	return (
 		<>
 			<ModalComponent />
